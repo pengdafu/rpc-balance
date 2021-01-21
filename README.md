@@ -1,7 +1,7 @@
 
 ## 关于本项目
 
-本项目提供了一个grpc+etcd实现的一个负载demo，可以用于生产，但是最好是自己实现一个负载，而不是用默认的轮询，因为不同的服务可能全职不一样。
+本项目提供了一个grpc+etcd实现的一个负载demo，可以用于生产，但是最好是自己实现一个负载，而不是用默认的轮询，因为不同的服务可能权重不一样。
 
 1. 下载 protoc
 
@@ -23,3 +23,6 @@ protoc -I thirty_part --go_out=plugins=grpc:api/v1/pb/  -I api/v1/pb api/v1/pb/p
 ```
 
 
+## grpc-gateway
+
+这一部分暂时没有时间补上

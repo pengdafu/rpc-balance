@@ -7,7 +7,7 @@ WORKDIR /build/go/
 
 COPY . .
 
-RUN GOOS=linux CGO_ENABLED=0 GOARCH=amd64 go build -ldflags="-s -w" -installsuffix cgo -o app cmd/client.go
+RUN GOOS=linux CGO_ENABLED=0 GOARCH=amd64 go build -ldflags="-s -w" -installsuffix cgo -o app cmd/main.go
 
 FROM alpine:latest as prod
 
